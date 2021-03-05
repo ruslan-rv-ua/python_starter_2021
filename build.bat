@@ -1,0 +1,1 @@
+.venv\scripts\python -m mkdocs build

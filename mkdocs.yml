@@ -1,0 +1,109 @@
+# Project information
+site_name: 'Site Name'
+site_description: 'Description'
+site_author: 'Ruslan Iskov'
+
+use_directory_urls: false
+strict: true
+dev_addr: '127.0.0.1:8010'
+
+site_dir: '.\docs'
+docs_dir: '.\source'
+
+# site_url: 'https://squidfunk.github.io/mkdocs-material/'
+
+
+
+# Repository
+### repo_name: 'squidfunk/mkdocs-material'
+### repo_url: 'https://github.com/squidfunk/mkdocs-material'
+#repo_name: 'winter design school'
+#repo_url: 'http://ruslan.rv.ua/winter_design_school/'
+# remote_branch: master
+
+
+# Copyright
+copyright: 'Copyright &copy; Ruslan Iskov'
+
+# Configuration
+theme:
+  name: material
+  language: uk
+  icon:
+    logo: material/library
+  palette:
+    scheme: slate # default
+    primary: 'black'
+    accent: 'yellow'
+  features:
+    - header.autohide
+    - navigation.instant
+    # or - navigation.tabs
+    # or - navigation.tabs.sticky
+    # - navigation.sections
+    - navigation.expand
+    # - toc.integrate
+
+# css overrides to make high contrast theme
+extra_css:
+  - stylesheets/dark_theme.css
+  - stylesheets/codehilite.css
+
+# switch off plugins, it's for removing 'search' feature
+plugins: []
+#plugins:
+#  - search
+#  - awesome-pages:
+#    collapse_single_pages: true
+        
+# Customization
+extra:
+  generator: false
+#   social:
+#    - type: 'github'
+#      link: 'https://github.com/squidfunk'
+#    - type: 'twitter'
+#      link: 'https://twitter.com/squidfunk'
+#    - type: 'linkedin'
+#      link: 'https://linkedin.com/in/squidfunk'
+#    search:
+#        language: 'en, ru'
+    
+
+# Google Analytics
+# google_analytics:
+#  - 'UA-XXXXXXXX-X'
+#  - 'auto'
+
+# Extensions
+markdown_extensions:
+  - toc:
+      permalink: false
+  - admonition
+  - codehilite:
+      guess_lang: false
+      css_class: codehilite
+      # pygments_style: agate
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: false
+  - pymdownx.tilde
+
+nav:
+  - First page: "first_page.md"
+  - Chapter 1:
+    - File 1: file1.md
+    - File 2: file2.md
