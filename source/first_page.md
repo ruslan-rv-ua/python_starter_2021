@@ -1,3 +1,0 @@
-# First page
-
-Your content goes here...

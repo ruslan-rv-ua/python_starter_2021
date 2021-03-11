@@ -1,6 +1,6 @@
 # Project information
-site_name: 'Site Name'
-site_description: 'Description'
+site_name: 'Python Starter 2021'
+site_description: 'Навчальний курс з програмування мовою Python для початківців.'
 site_author: 'Ruslan Iskov'
 
 use_directory_urls: false
@@ -103,7 +103,7 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - First page: "first_page.md"
-  - Chapter 1:
-    - File 1: file1.md
-    - File 2: file2.md
+  - Початок: "intro.md"
+  - 01. Підготовка:
+    - Підготовка програмного забезпечення: 01_preparations/01_01_software.md
+    - Інтерактивний режим інтерпретатора Python: 01_preparations/01_02_console.md
