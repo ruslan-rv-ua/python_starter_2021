@@ -1,0 +1,525 @@
+
+<!doctype html>
+<html lang="uk" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Навчальний курс з програмування мовою Python для початківців.">
+      
+      
+      
+        <meta name="author" content="Ruslan Iskov">
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.4">
+    
+    
+      
+        <title>Інтерактивний режим інтерпретатора Python - Python Starter 2021</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../stylesheets/dark_theme.css">
+    
+      <link rel="stylesheet" href="../stylesheets/codehilite.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="yellow">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python" class="md-skip">
+          Перейти до змісту
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+  
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Python Starter 2021" class="md-header__button md-logo" aria-label="Python Starter 2021">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python Starter 2021
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Інтерактивний режим інтерпретатора Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Python Starter 2021" class="md-nav__button md-logo" aria-label="Python Starter 2021">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Python Starter 2021
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro.html" class="md-nav__link">
+        Початок
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        01. Підготовка
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="01. Підготовка" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          01. Підготовка
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="01_01_software.html" class="md-nav__link">
+        Підготовка програмного забезпечення
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Інтерактивний режим інтерпретатора Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="01_02_console.html" class="md-nav__link md-nav__link--active">
+        Інтерактивний режим інтерпретатора Python
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Зміст">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Зрозумілий і легкий код
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Для чого використовується
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Хто використовує
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    Відомі проекти реалізовані на Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python_2" class="md-nav__link">
+    Дзен Python
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Зміст">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Зміст
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Зрозумілий і легкий код
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Для чого використовується
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    Хто використовує
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    Відомі проекти реалізовані на Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python_2" class="md-nav__link">
+    Дзен Python
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="python">Python: що і чому</h1>
+<p><strong>Замість епіграфу:</strong> <em>існує два типи мов програмування — ті, які усі постійно лають, і ті, якими ніхто не користується</em>.</p>
+<hr />
+<p>Python — це мова програмування високого рівня загального призначення.</p>
+<ul>
+<li>універсальна</li>
+<li>популярна</li>
+<li>кросплатформена</li>
+<li>інтеграція з іншими мовами програмування</li>
+<li>документація, велика спільнота</li>
+<li>відкритий код</li>
+<li>потужні батарейки у комплекті</li>
+</ul>
+<h2 id="_1">Зрозумілий і легкий код</h2>
+<ul>
+<li>низький поріг входження</li>
+<li>лаконічний, відсутнє синтаксичне "сміття"</li>
+<li>легко читати, висока швидкість написання</li>
+<li>менше помилок при написанні, відповідно потребує менше часу на налагодження програми</li>
+<li>легко підтримувати</li>
+<li>зменшення витрат на розробку і підтримку</li>
+</ul>
+<h2 id="_2">Для чого використовується</h2>
+<ul>
+<li>десктопні програми</li>
+<li>нейронні мережі</li>
+<li>веб: найпопулярніші фреймворки — Django, Flask</li>
+<li>додатки для Android</li>
+<li>скрипти (автоматизація, адміністрування, ...)</li>
+<li>аналіз даних</li>
+<li>наукові обчислення</li>
+<li>створення прототипів</li>
+<li>ігри</li>
+<li>програми для мікроконтролерів</li>
+<li>безліч іншого!</li>
+</ul>
+<h2 id="_3">Хто використовує</h2>
+<ul>
+<li>Google</li>
+<li>Dropbox</li>
+<li>Mozilla</li>
+<li>Facebook</li>
+<li>Yandex</li>
+<li>NASA</li>
+<li>Red Hat</li>
+<li>Microsoft</li>
+<li>Intel</li>
+</ul>
+<h2 id="python_1">Відомі проекти реалізовані на Python</h2>
+<ul>
+<li>YouTube (більша частина кодової бази повністю на Python)</li>
+<li>Десктопний клієнт Dropbox</li>
+<li>Reddit</li>
+<li>Instagram (500M юзерів на Python)</li>
+<li>Bitbucket (Python 2.7 и Django 1.7.11)</li>
+<li>EVE Online MMOPG</li>
+<li>Quora</li>
+<li>Spotify</li>
+<li>Критичні сервіси PayPal, які обробляють до 2 мільярдів запитів на добу. <a href="https://talkpython.fm/episodes/show/54/enterprise-software-with-python">подкаст</a></li>
+<li>Сервісы Mozilla</li>
+<li>Популярний сервіс ідей Pinterest</li>
+<li>Сервіс коментарів Disqus (реалізовано на Django)</li>
+<li>Внутрішні сервіси Facebook</li>
+<li>Система контролю версій Mercurial</li>
+<li>Сервіси Wargaming</li>
+</ul>
+<h2 id="python_2">Дзен Python</h2>
+<p>Розробники мови Python є прихильниками певної філософії програмування, яку називають «The Zen of Python» («Дзен Пайтона»). Її текст можна отримати у інтерпретаторі Python за допомогою команди (лише один раз за сесію)</p>
+<blockquote>
+<p>import this</p>
+</blockquote>
+<p>The Zen of Python українською:</p>
+<ul>
+<li>Гарне краще за потворне.</li>
+<li>Очевидне краще за неочевидне.</li>
+<li>Просте краще за складне.</li>
+<li>Складне краще за заплутане.</li>
+<li>Плоске краще за вкладене.</li>
+<li>Розділене є кращим за щільне.</li>
+<li>Легкість читання має значення.</li>
+<li>Особливі випадки не є настільки особливими, щоб порушувати правила.</li>
+<li>Хоча практичність є важливішою за бездоганність.</li>
+<li>Помилки ніколи не повинні бути замовчуваними.</li>
+<li>Хіба що замовчуваними відверто.</li>
+<li>Зустрівши двозначність, відкиньмо спокусу вгадати.</li>
+<li>Має бути один — і, бажано, тільки один — очевидний спосіб зробити це.</li>
+<li>Хоча спочатку він може бути й не очевидним, якщо ви не голландець.</li>
+<li>Зараз — краще, ніж ніколи.</li>
+<li>Хоча ніколи, найчастіше, — краще, ніж просто зараз.</li>
+<li>Якщо реалізацію важко пояснити — задум поганий.</li>
+<li>Якщо реалізацію легко пояснити — можливо, задум добрий.</li>
+<li>Простори імен — чудова річ, тож робімо їх більше!</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="01_01_software.html" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              Підготовка програмного забезпечення
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; Ruslan Iskov
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "navigation.instant", "navigation.expand"], "translations": {"clipboard.copy": "\u0421\u043a\u043e\u043f\u0456\u044e\u0432\u0430\u0442\u0438 \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0456\u0439\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "\u041f\u043e\u0448\u0443\u043a", "search.result.placeholder": "\u0420\u043e\u0437\u043f\u043e\u0447\u043d\u0456\u0442\u044c \u043f\u0438\u0441\u0430\u0442\u0438 \u0434\u043b\u044f \u043f\u043e\u0448\u0443\u043a\u0443", "search.result.none": "\u0417\u0431\u0456\u0433\u0456\u0432 \u043d\u0435 \u0437\u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u0417\u043d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0437\u0431\u0456\u0433", "search.result.other": "\u0417\u043d\u0430\u0439\u0434\u0435\u043d\u043e # \u0437\u0431\u0456\u0433\u0456\u0432", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.9b151c6a.min.js"></script>
+      
+    
+  </body>
+</html>
